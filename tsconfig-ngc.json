@@ -1,17 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "es2015",
-    "moduleResolution": "node",
+    "outDir": "dist/esm",
     "declaration": true,
     "experimentalDecorators": true,
-    "baseUrl": ".",
-    "stripInternal": true,
-    "outDir": "./dist/esm",
-    "rootDir": "./",
-    "sourceMap": true,
-    "inlineSources": true,
-    "types": [],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
     "lib": ["es2015", "dom"]
   },
   "files": [
@@ -19,8 +13,10 @@
   ],
   "angularCompilerOptions": {
     "strictMetadataEmit": true,
-    "genDir": "./dist/esm",
     "skipTemplateCodegen": true,
-    "debug": true
+    "flatModuleOutFile": "angular-resizable-element.js",
+    "flatModuleId": "angular-resizable-element",
+    "annotateForClosureCompiler": true
   }
 }
+
